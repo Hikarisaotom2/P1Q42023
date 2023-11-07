@@ -18,7 +18,6 @@ public class Clase_02_11_2023 {
         String valor = "Pedro";
         ImprimirMensaje(valor);
         ImprimirMensaje("Lineth");
-        
         ImprimirMensaje("Hola mundo");
     }//Main
     
