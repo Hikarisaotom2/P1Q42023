@@ -25,10 +25,12 @@ public class Clase07_11_2023 {
         ejemplo(mensaje);
         int numero = leerNumeroValidado();
         int numero2 = leerNumeroValidado();
+        
         int suma=Calculadora(numero,numero2,"+");
         int resta=Calculadora(numero,numero2,"-");
         int multi=Calculadora(numero,numero2,"*");
         int div=Calculadora(numero,numero2,"/");
+        
         System.out.println("Suma "+suma);
         System.out.println("Resta "+resta);
         System.out.println("multi "+multi);
