@@ -9,30 +9,9 @@ import java.util.Scanner;
 public class Clase13_11_2023 {
 
     public static void main(String[] args) {
-
-        //System.out.println("De numero a ascii");
-       // String cadena = "hola,adiosMmundo,gato,perro,miau";
-        //String [] arregloSplit=cadena.split(",");
-      //  int codigoAscii= cadena.charAt(0);
-        //  int codigoAscii= 'A';
-       // System.out.println("El codigo ascii "+codigoAscii);
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Ingrese una lista de numeros separadas por , ");
-        String cadena =  entrada.next();
-        String [] valores = cadena.split(",");
-        System.out.println("el tamano era "+valores.length);
-        for (int i = 0; i < valores.length; i++) {
-            System.out.println(valores[i]);
-        }
-        for (int i = 0; i < valores.length; i++) {
-            // Valores contiene strings 
-            //NO HAY MANERA DIRECTA DE CONVERTIR DE STRING A ASCII
-            //solo podemos convertir de enteros y caracteres a ascii
-            
-            // convertir de string => numero
-            // convertir de numero => ascii/char
-            //Lllegar al codigo ascii
-        }
+        String[] valores = crearArregloStrings();
+        imprimirArregloStrings(valores);
+        convertir(valores);
         int tamano = leerNumeroValidado();
         System.out.println("Se crea el arreglo....");
         int[] arreglo = crearArreglo(tamano);
@@ -47,7 +26,36 @@ public class Clase13_11_2023 {
         arreglo = ActualizarPos(pos, valorAModificar, arreglo);
         System.out.println("Imprimiendo el arreglo actualizado....");
         imprimirArreglo(arreglo);
-        
+
+    }
+
+    public static void convertir(String[] valores) {
+        for (int i = 0; i < valores.length; i++) {
+            // Valores contiene strings 
+            //NO HAY MANERA DIRECTA DE CONVERTIR DE STRING A ASCII
+            //solo podemos convertir de enteros y caracteres a ascii
+            // convertir de string => numero(int)
+            int numero = Integer.parseInt(valores[i]);
+            // convertir de numero(int) => ascii/char
+            char caracter = (char) numero;
+            //Lllegar al codigo ascii
+            System.out.println(numero + " => " + caracter);
+        }
+    }
+
+    public static void imprimirArregloStrings(String[] valores) {
+        System.out.println("el tamano era " + valores.length);
+        for (int i = 0; i < valores.length; i++) {
+            System.out.println(valores[i]);
+        }
+    }
+
+    public static String[] crearArregloStrings() {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese una lista de numeros separadas por , ");
+        String cadena = entrada.next();
+        String[] valores = cadena.split(",");
+        return valores;
     }
 
     //0.... tamano-1
