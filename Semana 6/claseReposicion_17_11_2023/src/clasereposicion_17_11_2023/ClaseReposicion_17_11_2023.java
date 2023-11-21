@@ -6,6 +6,39 @@ package clasereposicion_17_11_2023;
  */
 public class ClaseReposicion_17_11_2023 {
     public static void main(String[] args) {
+        
+        //Matriz cuadrada 
+        int tamano = 5;
+        String [] [] matrizCuadrada =  new String [tamano][tamano];
+        for (int i = 0; i <matrizCuadrada .length ; i++) { //Filas 
+            for (int j = 0; j < matrizCuadrada .length; j++) { //Columnas
+                System.out.print(matrizCuadrada[i][j]);
+            }
+            System.out.println("");
+        }
+                
+        //Matriz no cuadrada
+        int tamFilas= 5;
+        int tamColumnas = 6;
+        String [] [] matrizNoCuadrada =  new String [tamFilas][tamColumnas];
+        
+        for (int i = 0; i <matrizNoCuadrada .length ; i++) { //Filas 
+            for (int j = 0; j <matrizNoCuadrada[0].length; j++) { //Columnas
+                System.out.print(matrizNoCuadrada[i][j]);
+            }
+            System.out.println("");
+        }
+        //Matriz de columnas variables
+        int tamano2 = 6;
+         String [] [] matrizEspecial =  new String [tamano2][];
+         for (int i = 0; i < matrizEspecial.length; i++) {
+             matrizEspecial[i]= new String[i];
+             for (int j = 0; j < matrizEspecial[i].length; j++) {
+                 System.out.print(matrizEspecial[i][j]);
+             }
+             System.out.println("");
+        }
+        
         /*
         3 distintas formas de leer filas y columnas desde la consola
         sout
