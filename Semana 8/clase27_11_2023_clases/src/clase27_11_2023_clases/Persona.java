@@ -7,10 +7,10 @@ package clase27_11_2023_clases;
  */
 public class Persona {
     /*Atributos*/
-    String nombre;
-    int edad;
-    String Sexo;
-    String colorOjos;
+    private String nombre;
+    private int edad;
+    private String Sexo;
+    private String colorOjos;
 
     /*Constructor*/
     public Persona(String nombre, int edad, String Sexo, String colorOjos){
@@ -26,6 +26,7 @@ public class Persona {
     }
 
     public void setNombre(String nombre) {
+        
         this.nombre = nombre;
     }
 
@@ -65,4 +66,5 @@ public class Persona {
     public String toString() {
         return "Nombre: "+ this.nombre +" - "+this.edad;
     }
+  
 }
