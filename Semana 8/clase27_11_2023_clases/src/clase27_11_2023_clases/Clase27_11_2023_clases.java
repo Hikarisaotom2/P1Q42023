@@ -17,6 +17,8 @@ public class Clase27_11_2023_clases {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        int fac= factorial(60000);
+        System.out.println("El resultado es "+fac);
         /*
         Tipo_Dato nombre_Variable = valorInicial;
         String cadena = "";
@@ -144,5 +146,14 @@ public class Clase27_11_2023_clases {
         
         return nuevaPersona;
     }
+    
+    public static int factorial( int numero){
+   if(numero==1||numero==0){
+       return 1 ;
+   }else{
+       return numero*factorial(numero-1);
+   }
+}
+
 
 }
