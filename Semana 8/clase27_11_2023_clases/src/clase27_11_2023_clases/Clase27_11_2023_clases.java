@@ -139,6 +139,7 @@ public class Clase27_11_2023_clases {
         String colorOjos = entrada.next();
         
         Persona nuevaPersona = new Persona(nombre,edad,sexo,colorOjos);
+        // tipo de dato nombreVariable = valor;
 //Para Java el objeto  nuevaPersona es un objeto distinto a otraNuevaPersona aunque tengan la misma informacion.
 //        Persona otraNuevaPersona = new Persona(nombre,edad,sexo,colorOjos);
 //        System.out.println("INDTIFICADOR PARA NUEVA PERSONA "+ nuevaPersona.hashCode());

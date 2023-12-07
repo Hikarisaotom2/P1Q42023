@@ -6,7 +6,7 @@ package clase27_11_2023_clases;
  * @author Clau
  */
 public class Persona {
-    /*Atributos*/
+   
     private String nombre;
     private int edad;
     private String Sexo;
@@ -18,15 +18,14 @@ public class Persona {
         this.edad = edad;
         this.Sexo = Sexo;
         this.colorOjos = colorOjos;
+      
     }
     /*Mutadores de acceso || Setters/getters*/
-
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
-        
         this.nombre = nombre;
     }
 
